@@ -11,5 +11,9 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1"
   }
 }
