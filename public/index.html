@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <title>Timestamp microservice</title>
+  <style>
+    h1{
+      margin-bottom: 20px;
+    }
+    h3{
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h3>FCC Project</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Timestamp Microservice API</h1>
+        <p>
+          This API takes in a natural date (e.g. "August 15, 2016") or an Unix timestamp (e.g. "1471219200") 
+          and will return a JSON response with both the natural date and the Unix timestamp.
+        </p>
+        <p>
+          In case of an invalid date or timestamp, the response will set both the date and timestamp property to null.
+        </p>
+
+        <h3>Example usage</h3>
+        <p>
+          <code>https://project-name.herokuapp.com/August%2015,%202015</code>
+          <br>
+          <code>https://project-name.herokuapp.com/1471219200</code>
+        </p>
+
+        <h3>Example response</h3>
+        <p>
+          <code>{ "unix": 1471219200, "natural": "August 15, 2016" }</code>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
 </body>
 </html>

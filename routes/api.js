@@ -6,6 +6,7 @@ var router = express.Router();
 // Routes
 router
   .get("/:date", function(req, res){
+    // Send JSON
     res.send(dates(req.params.date));
   })
   .get("/", function(req, res){
